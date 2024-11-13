@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Poppins";
+  /* src: url("https://top10us.com/static/home-warranty-comparison/assets/fonts/Poppins-Regular.ttf") format("truetype"); */
+  src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoL";
+  src: url("./fonts/Roboto-Thin.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "RobotoR";
+  src: url("./fonts/Roboto-Regular.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "RobotoM";
+  src: url("./fonts/Roboto-Light.ttf");
+  font-weight: 300;
+}
+
+/**************** GENERAL SECTION *******************/
+
+body {
+  font-size: 16px;
+  font-family: "RobotoM", sans-serif;;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-block-end: 0;
+}
+
+h1,h2,h3{
+  margin: 0;
+}
+
+.max-width{
+  /* max-width: 960px;
+  margin: 0 auto; */
+  max-width: 66.666667%;
+  margin: 0 auto;
+
+}
+
+/**************** HEADER SECTION *******************/
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 1.4rem 2.8rem;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+  font-family: "RobotoM", sans-serif;
+  transition: padding 1s ease, background-color 1s ease;
+  font-size: 16px;
+  color: white;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+header .icon {
+  display: flex;
+  align-self: center;
+  padding-inline-end: 10px;
+}
+
+header .icon img {
+  max-width: 48px;
+  width: 100%;
+}
+
+header li:not(.icon) {
+  padding-inline: 10px;
+}
+
+.scrolled {
+  padding: 1rem 2.8rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/**************** HERO SECTION *******************/
+
+#hero{
+  background-image: url("./images/homes-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 65px;
+  padding-block-start: 6rem;
+  color: #fff;
+  font-family: "RobotoM", sans-serif;
+  display: flex;
+}
+
+#hero h1{
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: "RobotoR", sans-serif;
+}
+
+#hero h2{
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+#hero #lookup-by-zip{
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+  padding: 1.5rem;
+  margin: 3rem;
+  position: relative;
+}
+
+#lookup-by-zip label{
+  position: absolute;
+}
+
+#lookup-by-zip input{
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid green;
+  text-align: center;
+    box-shadow: green 0px 1px 0px 0px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#lookup-by-zip input:focus{
+  border-bottom: 1px solid #80bdff;
+  text-align: center;
+    /* box-shadow:  0px 0px 0px .2rem rgba(0,123,255,.25); */
+}
+
+#hero button{
+  cursor: pointer;
+  padding: .84rem 2.14rem;
+  font-size: .81rem;
+  margin: .375rem;
+  border: 0;
+  border-radius: .125rem;
+  color: #fff;
+  background-color: #4285f4;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#hero button:hover{
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15)
+}
+
+#hero button i {
+  margin-inline-start: .5rem;
+}
+
+#hero .disclosure{
+  font-size: 80%;
+    font-weight: 300;
+}
+
+#hero a{
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
+}
+#hero a:hover{
+  color: #0056b3;
+}
+
+/**************** PROS SECTION *******************/
+
+#pros{
+}
+
+#pros .cards-section{
+  display: flex;
+}
+
+#pros .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/**************** COMPANIES SECTION *******************/
+
+#companies{
+  background-image: url("./images/couple.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/**************** INFO SECTION *******************/
+
+#info{
+}
+
+#info > p{
+  font-size: 80%;
+  font-weight: 400;
+}
+
+#info .articles{
+  display: flex;
+}
+
+#info .articles-end article, 
+#info .articles-start article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+/**************** FOOTER SECTION *******************/
+
+footer{
+  background-color: #1C2331;
+  color: #fff;
+}
+
+footer section {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+/**************** MEDIA QUERIES SECTION *******************/
+
+@media screen and (max-width: 1300px) {
+ 
+}
+
